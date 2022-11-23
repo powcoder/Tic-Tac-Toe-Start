@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid.png" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-VT-QSW">
+                                <rect key="frame" x="47" y="293" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="RxX-d8-wsf"/>
+                                    <constraint firstAttribute="height" constant="320" id="h12-Yc-iFI"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SkD-Py-B2Z">
+                                <rect key="frame" x="47" y="293" width="320" height="320"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w3l-gu-oir">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="320"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gej-uC-Rnz" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23z-Dy-bAk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwi-00-LYS" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="106.5" width="106.5" height="107"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GWc-Gx-4mO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgQ-1u-TGs" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="213.5" width="106.5" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gt6-0q-kUe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rwi-00-LYS" firstAttribute="height" secondItem="gej-uC-Rnz" secondAttribute="height" id="phM-bS-KfL"/>
+                                            <constraint firstItem="fgQ-1u-TGs" firstAttribute="height" secondItem="gej-uC-Rnz" secondAttribute="height" id="zxj-Ti-5eR"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mzf-xc-hpW">
+                                        <rect key="frame" x="106.5" y="0.0" width="107" height="320"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-oG-Jlv" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdA-dx-wNN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X31-x7-JEg" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="106.5" width="107" height="107"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLf-cb-ylY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rup-lo-h8l" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="213.5" width="107" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIb-kg-Dug"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rup-lo-h8l" firstAttribute="height" secondItem="WV9-oG-Jlv" secondAttribute="height" id="kUc-4V-vO8"/>
+                                            <constraint firstItem="X31-x7-JEg" firstAttribute="height" secondItem="WV9-oG-Jlv" secondAttribute="height" id="tCB-xr-9cV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tzd-gG-Fs4">
+                                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="320"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7K-ac-slA" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRp-yj-e8E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-jq-vom" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="106.5" width="106.5" height="107"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVJ-AN-5FI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eI-6H-M1x" customClass="MyUIButton">
+                                                <rect key="frame" x="0.0" y="213.5" width="106.5" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gridButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiH-sj-925"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wEn-jq-vom" firstAttribute="height" secondItem="h7K-ac-slA" secondAttribute="height" id="h4v-bp-8uM"/>
+                                            <constraint firstItem="2eI-6H-M1x" firstAttribute="height" secondItem="h7K-ac-slA" secondAttribute="height" id="mQ8-BE-wzq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="7Hd-RI-zqo"/>
+                                    <constraint firstAttribute="width" constant="320" id="Ddm-p7-7Rt"/>
+                                    <constraint firstItem="tzd-gG-Fs4" firstAttribute="width" secondItem="w3l-gu-oir" secondAttribute="width" id="MvC-aB-BGH"/>
+                                    <constraint firstItem="mzf-xc-hpW" firstAttribute="width" secondItem="w3l-gu-oir" secondAttribute="width" id="tWB-pM-hcm"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="byb-D7-gfE">
+                                <rect key="frame" x="64" y="673" width="286" height="32"/>
+                                <segments>
+                                    <segment title="Player X"/>
+                                    <segment title="Player O"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WPr-aK-DSh"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic-Tac-Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElJ-jy-gI5">
+                                <rect key="frame" x="105" y="169" width="204.5" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fX-ud-Wr6">
+                                <rect key="frame" x="196" y="764" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="bhD-mg-XU4"/>
+                                    <constraint firstAttribute="width" constant="22" id="xI2-e3-YNX"/>
+                                </constraints>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vS-Pj-nm3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="byb-D7-gfE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="6bo-Uu-j0y"/>
+                            <constraint firstItem="2fX-ud-Wr6" firstAttribute="top" secondItem="byb-D7-gfE" secondAttribute="bottom" constant="60" id="IUk-aW-mc8"/>
+                            <constraint firstItem="byb-D7-gfE" firstAttribute="top" secondItem="rup-lo-h8l" secondAttribute="bottom" constant="60" id="KjD-wj-gCT"/>
+                            <constraint firstItem="ElJ-jy-gI5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LIu-fT-Cik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byb-D7-gfE" secondAttribute="trailing" constant="64" id="Lrg-Ju-Kpu"/>
+                            <constraint firstItem="SkD-Py-B2Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="P67-np-8Kn"/>
+                            <constraint firstItem="SkD-Py-B2Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QBc-wJ-VsU"/>
+                            <constraint firstItem="4h4-VT-QSW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VRX-Z6-nQk"/>
+                            <constraint firstItem="SkD-Py-B2Z" firstAttribute="top" secondItem="ElJ-jy-gI5" secondAttribute="bottom" constant="60" id="hap-0l-59i"/>
+                            <constraint firstItem="2fX-ud-Wr6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sbn-mV-HVh"/>
+                            <constraint firstItem="4h4-VT-QSW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zQ1-eB-bNR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="grid00Button" destination="gej-uC-Rnz" id="Sph-8f-m4f"/>
+                        <outlet property="grid01Button" destination="rwi-00-LYS" id="fHO-Us-kTK"/>
+                        <outlet property="grid02Button" destination="fgQ-1u-TGs" id="eJ6-7E-TR9"/>
+                        <outlet property="grid10Button" destination="WV9-oG-Jlv" id="w3n-GD-t9v"/>
+                        <outlet property="grid11Button" destination="X31-x7-JEg" id="57P-qU-gxy"/>
+                        <outlet property="grid12Button" destination="rup-lo-h8l" id="K4J-DN-OVD"/>
+                        <outlet property="grid20Button" destination="h7K-ac-slA" id="jEN-o6-7Jt"/>
+                        <outlet property="grid21Button" destination="wEn-jq-vom" id="Tld-fc-VP6"/>
+                        <outlet property="grid22Button" destination="2eI-6H-M1x" id="ykU-xV-VqU"/>
+                        <outlet property="segmentedControl" destination="byb-D7-gfE" id="PY8-C5-rey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+        <image name="grid.png" width="244" height="244"/>
+    </resources>
+</document>
